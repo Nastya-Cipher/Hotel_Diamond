@@ -7,9 +7,10 @@ using HotelDiamond.Models;
 
 namespace HotelDiamond.Controllers
 {
-    public class HomeController : Controller
+    public class HotelController : Controller
     {
-        public ActionResult Index()
+        [Authorize]
+        public ActionResult Rooms()
         {
             return View();
         }
